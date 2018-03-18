@@ -25,7 +25,7 @@ injectGlobal`
 
 import Header from '../components/Header'
 
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ children, data }) => (
   <div>
     <Helmet
       title="Gatsby Default Starter"
@@ -34,7 +34,7 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header />
+    <Header words={data.intro.frontmatter.words} />
     <main>
       {children()}
     </main>
@@ -46,3 +46,14 @@ TemplateWrapper.propTypes = {
 }
 
 export default TemplateWrapper
+
+
+export const layoutQuery = graphql`
+  query LayoutQuery {
+    intro: markdownRemark(fileAbsolutePath: { glob: "/**/Intro.md" }) {
+      frontmatter {
+        words
+      }
+    }
+  }
+`

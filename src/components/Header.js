@@ -8,7 +8,7 @@ import { fonts } from '../styles/vars'
 import MakeABooking from './MakeABooking'
 import Intro from './Intro'
 
-export default () => (
+export default ({words}) => (
   <Wrapper>
     <Inner>
       <Logo>
@@ -17,7 +17,7 @@ export default () => (
         </svg>
       </Logo>
       <MakeABooking />
-      <Intro />
+      <Intro words={words} />
       <ZoomingImage />
     </Inner>
   </Wrapper>

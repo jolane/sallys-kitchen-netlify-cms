@@ -15,6 +15,7 @@ class Intro extends React.Component {
     }
   }
   componentDidMount() {
+    this.setState({ words: this.props.words })
     const intervalID = window.setInterval(this.myCallback.bind(this), 6000)
   }
   myCallback() {

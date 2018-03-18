@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: jolane/sallys-kitchen-netlify-cms
+
+media_folder: static/images
+public_folder: /images
+
+collections:
+  - name: sections
+    label: "Sections"
+    files:
+      - file: "src/data/About.md"
+        label: "About"
+        name: "about"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Paragraph", name: "paragraph", widget: "string"}
+          - {label: "Paragraph 2", name: "paragraph2", widget: "string"}
+

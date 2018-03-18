@@ -9,34 +9,20 @@ import ContactRow from '../components/ContactRow'
 import Latest from '../components/Latest'
 import Where from '../components/Where'
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Container>
     <TextBlock>
-      <h4>About Sally</h4>
-      <div>
-        <p>
-          Sally fell passionately in love with food in her mother’s cozy
-          kitchen. Now she has her own kitchen – a friendly place to enjoy
-          delicious, traditional recipes and good company around the table.
-        </p>
-      </div>
+      <h4>{data.about.frontmatter.title}</h4>
+      <div><p>{data.about.frontmatter.paragraph}</p></div>
       <h5>
-        <span>Sally’s Kitchen serves deliciously simple,</span>
-        <br />
-        <span>modern food to be enjoyed with fine</span>
-        <br />
-        <span>wine and great company.</span>
+        {data.about.frontmatter.callout.map((line, index) => (
+          <div key={index}>
+            <span>{line}</span>
+            <br />
+          </div>
+        ))}
       </h5>
-      <div>
-        <p>
-          Sally’s food is fresh, flavourful and made with love. Using seasonal
-          produce, her eclectic menu features anything and everything that takes
-          her fancy. Simple dishes are created with care, integrity and quality
-          ingredients. This is feel good food, just like Sally’s mother made.
-        </p>
-        <br />
-        <br />
-      </div>
+      <div><p>{data.about.frontmatter.paragraph2}</p><br /><br /></div>
     </TextBlock>
     <Images />
     <TextBlock>
@@ -106,7 +92,19 @@ const IndexPage = () => (
 
 export default IndexPage
 
-
 const Container = styled.div`
   font-family: ${fonts["main-font"]}
+`
+
+export const mainQuery = graphql`
+  query MainQuery {
+    about: markdownRemark(fileAbsolutePath: { glob: "/**/About.md" }) {
+      frontmatter {
+        title
+        paragraph
+        callout
+        paragraph2
+      }
+    }
+  }
 `
