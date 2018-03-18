@@ -5,7 +5,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -19,6 +18,12 @@ module.exports = {
       options: {
         name: `data`,
         path: `${__dirname}/src/data/`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
   ],
