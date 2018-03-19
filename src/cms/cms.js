@@ -8,12 +8,12 @@ import HeaderPreview from './HeaderPreview'
 import AboutPreview from './AboutPreview'
 
 
-const StyledAboutPreivew = () => (
+() => (
 	<StyleSheetManager>
-		<AboutPreview />
+		{AboutPreview}
 	</StyleSheetManager>
-)
+)()
 
 
 CMS.registerPreviewTemplate('intro', HeaderPreview)
-CMS.registerPreviewTemplate('about', StyledAboutPreivew)
+CMS.registerPreviewTemplate('about', AboutPreview)
