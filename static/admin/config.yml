@@ -15,8 +15,8 @@ collections:
         name: "about"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Paragraph", name: "paragraph", widget: "description"}
-          - {label: "Paragraph 2", name: "paragraph2", widget: "description"}
+          - {label: "Paragraph", name: "paragraph", widget: "text"}
+          - {label: "Paragraph 2", name: "paragraph2", widget: "text"}
           - label: "Callout"
             name: "callout"
             widget: "list"
