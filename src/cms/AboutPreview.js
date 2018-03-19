@@ -1,14 +1,23 @@
 import React from 'react'
+import { StyleSheetManager } from 'styled-components'
+
 
 import About from '../sections/About'
 
-const AboutPreview = ({ entry, widgetFor }) => (
-  <About
-    title={entry.getIn(['data', 'title'])}
-    paragraph={entry.getIn(['data', 'paragraph'])}
-    paragraph2={entry.getIn(['data', 'paragraph2'])}
-    callout={entry.getIn(['data', 'callout'])}
-  />
-)
+const AboutPreview = ({ entry, widgetFor }) => {
+  const iframe = document.querySelector('.nc-previewPane-frame')
+  const iframeHeadElem = iframe.contentDocument.head
+
+  return (
+    <StyleSheetManager target={iframeHeadElem}>
+      <About
+        title={entry.getIn(['data', 'title'])}
+        paragraph={entry.getIn(['data', 'paragraph'])}
+        paragraph2={entry.getIn(['data', 'paragraph2'])}
+        callout={entry.getIn(['data', 'callout'])}
+      />
+    </StyleSheetManager>
+  )
+}
 
 export default AboutPreview
