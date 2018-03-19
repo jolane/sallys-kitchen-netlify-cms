@@ -9,9 +9,9 @@ import AboutPreview from './AboutPreview'
 
 
 () => (
-	<StyleSheetManager>
-		<AboutPreview />
-	</StyleSheetManager>
+  <StyleSheetManager target={iframeHeadElem}>
+    <AboutPreview />
+  </StyleSheetManager>
 )()
 
 
