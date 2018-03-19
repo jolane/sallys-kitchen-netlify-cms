@@ -10,7 +10,7 @@ import AboutPreview from './AboutPreview'
 
 () => (
 	<StyleSheetManager>
-		{AboutPreview}
+		<AboutPreview />
 	</StyleSheetManager>
 )()
 
