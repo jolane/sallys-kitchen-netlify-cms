@@ -1,8 +1,6 @@
 import React from 'react'
 import styled, { injectGlobal } from 'styled-components'
 
-
-
 import {
   withScriptjs,
   withGoogleMap,
@@ -11,7 +9,7 @@ import {
 } from 'react-google-maps'
 import { compose, withProps } from 'recompose'
 
-const Where = compose(
+const Map = compose(
   withProps({
     googleMapURL:
       'https://maps.googleapis.com/maps/api/js?key=AIzaSyC9Dn49n6cgyTLPI0wZ5u0QanW3OLItgLs&v=3.exp&libraries=geometry,drawing,places',
@@ -102,30 +100,4 @@ const Where = compose(
   </GoogleMap>
 ))
 
-export default Where
-
-
-// export default () => (
-//   <Wrapper>
-//     <div className="map">
-//       <div className="map-inner" id="map" />
-//     </div>
-//   </Wrapper>
-// )
-
-
-// const Wrapper = styled.section`
-//   .map {
-//     margin-top: 90px;
-//     width: 100%;
-//     height: 48vw;
-
-//     ${below.m`
-//         height: 100vw;
-//     `};
-//   }
-
-//   .map-inner {
-//     background-color: #ccc;
-//   }
-// `
+export default Map

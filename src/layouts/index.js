@@ -23,7 +23,7 @@ injectGlobal`
   }
 `
 
-import Header from '../components/Header'
+import Header from '../sections/Header'
 
 const TemplateWrapper = ({ children, data }) => (
   <div>

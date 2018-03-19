@@ -5,8 +5,8 @@ import { box } from '../styles/mixins'
 import { below } from '../styles/media'
 import { fonts } from '../styles/vars'
 
-import MakeABooking from './MakeABooking'
-import Intro from './Intro'
+import MakeABooking from '../components/MakeABooking'
+import Intro from '../components/Intro'
 
 export default ({words}) => (
   <Wrapper>

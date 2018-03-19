@@ -10,21 +10,21 @@ collections:
   - name: sections
     label: "Sections"
     files:
-      - file: "src/data/Intro.md"
-        label: "Intro"
-        name: "intro"
+      - file: "src/data/About.md"
+        label: "About"
+        name: "about"
         fields:
-          - label: "Words"
-            name: "words"
-            widget: "list"
-            allow_add: true
-            field:
-              - {label: "Word", name: "word", widget: "string"}
-      # - file: "src/data/About.md"
-      #   label: "About"
-      #   name: "about"
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Paragraph", name: "paragraph", widget: "string"}
+          - {label: "Paragraph 2", name: "paragraph2", widget: "string"}
+      # - file: "src/data/Intro.md"
+      #   label: "Intro"
+      #   name: "intro"
       #   fields:
-      #     - {label: "Title", name: "title", widget: "string"}
-      #     - {label: "Paragraph", name: "paragraph", widget: "string"}
-      #     - {label: "Paragraph 2", name: "paragraph2", widget: "string"}
+      #     - label: "Words"
+      #       name: "words"
+      #       widget: "list"
+      #       allow_add: true
+      #       field:
+      #         - {label: "Word", name: "word", widget: "string"}
 
