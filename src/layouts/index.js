@@ -2,25 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import styledNormalize from 'styled-normalize'
 import { injectGlobal } from 'styled-components'
-import '../styles/fonts'
-import { below } from '../styles/media'
-
+import normalizeCss from '../../static/styles/normalize.css'
+import globalCss from '../../static/styles/global.css'
 injectGlobal`
-  ${styledNormalize}
-  body {
-    background-color: #efede4;
-    font-size: 24px;
-    line-height: 2;
-    color: #1a1a1a;
-    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-
-    ${below.m`
-      font-size: 16px;
-      line-height: 1.5;
-    `}
-  }
+  ${normalizeCss}
+  ${globalCss}
 `
 
 import Header from '../sections/Header'
