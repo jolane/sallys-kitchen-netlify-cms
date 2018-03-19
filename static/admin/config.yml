@@ -17,6 +17,10 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Paragraph", name: "paragraph", widget: "string"}
           - {label: "Paragraph 2", name: "paragraph2", widget: "string"}
+          - label: "Callout"
+            name: "callout"
+            widget: "list"
+            allow_add: false
       # - file: "src/data/Intro.md"
       #   label: "Intro"
       #   name: "intro"
