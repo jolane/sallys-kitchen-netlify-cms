@@ -25,7 +25,7 @@ collections:
           - {label: "Paragraph 2", name: "paragraph2", widget: "text"}
       - files: "src/data/TheKitchen.md"
         label: "The Kitchen"
-        name: "the-kitchen"
+        name: "thekitchen"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Paragraph", name: "paragraph", widget: "text"}
