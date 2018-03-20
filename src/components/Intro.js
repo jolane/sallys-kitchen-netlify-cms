@@ -15,12 +15,21 @@ class Intro extends React.Component {
     }
   }
   componentWillMount() {
-    let words = this.props.words.split(',').map((w) => ( w.trim()))
+    let words = this.props.words.split(',').map(w => w.trim())
     let front_word = words[0]
     let back_word = words[1]
 
     this.setState({ words, front_word, back_word })
     const intervalID = setInterval(this.myCallback.bind(this), 6000)
+  }
+  componentWillReceiveProps(nextProps) {
+    let words = nextProps.words.split(',').map(w => w.trim())
+    let current_word = 0
+    let front_word = words[0]
+    let back_word = words[1]
+    let flip = false
+
+    this.setState({ words, current_word, front_word, back_word, flip })
   }
   myCallback() {
     let current_word = this.state.current_word + 1
