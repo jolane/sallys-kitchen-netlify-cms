@@ -20,7 +20,7 @@ class Intro extends React.Component {
     let back_word = words[1]
 
     this.setState({ words, front_word, back_word })
-    const intervalID = window.setInterval(this.myCallback.bind(this), 6000)
+    const intervalID = setInterval(this.myCallback.bind(this), 6000)
   }
   myCallback() {
     let current_word = this.state.current_word + 1
