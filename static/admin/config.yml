@@ -10,7 +10,7 @@ collections:
   - name: sections
     label: "Sections"
     files:
-      - file "src/data/Intro.md"
+      - file: "src/data/Intro.md"
         label: "Intro"
         name: "intro"
         fields:
