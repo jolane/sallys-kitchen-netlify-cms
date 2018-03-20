@@ -18,11 +18,12 @@ import Map from '../sections/Map'
 
 const IndexPage = ({ data }) => {
   const about = data.about.frontmatter;
+  const theKitchen = data.theKitchen.frontmatter
   return (
     <Container>
       <About { ...about} />
       <Images />
-      <TheKitchen />
+      <TheKitchen {...theKitchen} />
       <WhatsCooking />
       <Functions />
       <Latest />
@@ -38,14 +39,20 @@ const Container = styled.div`
   font-family: ${fonts["main-font"]}
 `
 
-export const mainQuery = graphql`
+export const mainQuery1 = graphql`
   query MainQuery {
     about: markdownRemark(fileAbsolutePath: { glob: "/**/About.md" }) {
       frontmatter {
         title
         paragraph
-        callout
+        large_text
         paragraph2
+      }
+    }
+    theKitchen: markdownRemark(fileAbsolutePath: { glob: "/**/TheKitchen.md" }) {
+     frontmatter {
+       title
+       paragraph
       }
     }
   }

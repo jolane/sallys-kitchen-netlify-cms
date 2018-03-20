@@ -15,16 +15,17 @@ import Header from '../sections/Header'
 const TemplateWrapper = ({ children, data }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Sally's Kitchen - Shop one, 295 Exhibition St Melbourne, 3000"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        {
+          name: 'description',
+          content:
+            'Sally’s Kitchen serves deliciously simple, modern food to be enjoyed with fine wine and great company.',
+        },
       ]}
     />
-    <Header words={data.intro.frontmatter.words} />
-    <main>
-      {children()}
-    </main>
+    <Header words={data.intro.frontmatter.is_words} />
+    <main>{children()}</main>
   </div>
 )
 
@@ -35,11 +36,11 @@ TemplateWrapper.propTypes = {
 export default TemplateWrapper
 
 
-export const layoutQuery = graphql`
-  query LayoutQuery {
+export const layoutQuery2 = graphql`
+  query LayoutQuery2 {
     intro: markdownRemark(fileAbsolutePath: { glob: "/**/Intro.md" }) {
       frontmatter {
-        words
+        is_words
       }
     }
   }

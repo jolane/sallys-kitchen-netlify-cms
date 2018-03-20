@@ -10,27 +10,24 @@ collections:
   - name: sections
     label: "Sections"
     files:
+      - file "src/data/Intro.md"
+        label: "Intro"
+        name: "intro"
+        fields:
+          - {label: "Words (comma seperated)", name: "is_words", widget: "string"}
       - file: "src/data/About.md"
         label: "About"
         name: "about"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Paragraph", name: "paragraph", widget: "text"}
+          - {label: "Large Text", name: "large_text", widget: "text"}
           - {label: "Paragraph 2", name: "paragraph2", widget: "text"}
-          - label: "Callout"
-            name: "callout"
-            widget: "list"
-            allow_add: false
-            field:
-              - {label: "Callout Line", "callout_line", widget: "string"}
-      # - file: "src/data/Intro.md"
-      #   label: "Intro"
-      #   name: "intro"
-      #   fields:
-      #     - label: "Words"
-      #       name: "words"
-      #       widget: "list"
-      #       allow_add: true
-      #       field:
-      #         - {label: "Word", name: "word", widget: "string"}
+      - files: "src/data/TheKitchen.md"
+        label: "The Kitchen"
+        name: "the-kitchen"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Paragraph", name: "paragraph", widget: "text"}
+
 

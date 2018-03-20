@@ -7,15 +7,19 @@ class Intro extends React.Component {
   constructor() {
     super()
     this.state = {
-      words: ['cooking', 'laughing'],
+      words: [],
       current_word: 0,
-      front_word: 'cooking',
-      back_word: 'laughing',
+      front_word: '',
+      back_word: '',
       flip: false,
     }
   }
-  componentDidMount() {
-    this.setState({ words: this.props.words })
+  componentWillMount() {
+    let words = this.props.words.split(',').map((w) => ( w.trim()))
+    let front_word = words[0]
+    let back_word = words[1]
+
+    this.setState({ words, front_word, back_word })
     const intervalID = window.setInterval(this.myCallback.bind(this), 6000)
   }
   myCallback() {
@@ -26,17 +30,15 @@ class Intro extends React.Component {
     const front = document.querySelector('.intro__is-front')
     const back = document.querySelector('.intro__is-back')
 
-    if (this.is_text.classList.contains('flip')) {
+    if (this.state.flip === true) {
       let front_word = this.state.words[index]
       this.setState({ front_word })
     } else {
       let back_word = this.state.words[index]
-      this.setState({
-        back_word,
-      })
+      this.setState({ back_word })
     }
-    let flip = !this.state.flip
 
+    let flip = !this.state.flip
     this.setState({
       flip,
     })

@@ -1,7 +1,4 @@
 ---
-words:
-  - cooking
-  - laughing
-  - '1'
+is_words: cooking, laughing, mixing
 ---
 
