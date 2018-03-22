@@ -11,9 +11,7 @@ paragraph2: >-
   is feel good food, just like Sally’s mother made.
 large_text: >-
   Sally’s Kitchen serves deliciously simple,
-
   modern food to be enjoyed with fine
-
   wine and great company.
 ---
 

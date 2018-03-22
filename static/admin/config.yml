@@ -37,5 +37,13 @@ collections:
           - {label: "Image Two", name: "image_two", widget: "image"}
           - {label: "Image Three", name: "image_three", widget: "image"}
           - {label: "Image Four", name: "image_four", widget: "image"}
+      - file: "src/data/Where.md"
+        label: "Where"
+        name: "where"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Large Text", name: "large_text", widget: "text"}
+          - {label: "Paragraph", name: "paragraph", widget: "text"}
+
 
 

@@ -6,25 +6,25 @@ export default props => (
     <div className="image-block">
       <div
         className="image-block__inner"
-        style={{ backgroundImage: 'url(/images/full1.jpg)' }}
+        style={{ backgroundImage: `url(${props.image_one})` }}
       />
     </div>
     <div className="image-block">
       <div
         className="image-block__inner"
-        style={{ backgroundImage: 'url(/images/full2.jpg)' }}
+        style={{ backgroundImage: `url(${props.image_two})` }}
       />
     </div>
     <div className="image-block">
       <div
         className="image-block__inner"
-        style={{ backgroundImage: 'url(/images/full3.jpg)' }}
+        style={{ backgroundImage: `url(${props.image_three})` }}
       />
     </div>
     <div className="image-block">
       <div
         className="image-block__inner"
-        style={{ backgroundImage: 'url(/images/full4.jpg)' }}
+        style={{ backgroundImage: `url(${props.image_four})` }}
       />
     </div>
   </Container>

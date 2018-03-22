@@ -3,14 +3,12 @@ import React from 'react'
 import TextBlock from '../components/TextBlock'
 import ContactRow from '../components/ContactRow'
 
-export default ({ content }) => (
+export default ({ title, text }) => (
   <TextBlock>
-    <h4>WHAT’S COOKING</h4>
+    <h4>{title}</h4>
     <div>
-      <p>
-        Always fresh and local, here’s a selection of a few things we are
-        dishing out at the moment. Come in and check out the full menu.
-      </p>
+      <p>{text}</p>
     </div>
   </TextBlock>
 )
+
