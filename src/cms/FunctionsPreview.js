@@ -12,9 +12,9 @@ class FunctionsPreview extends React.Component {
     return (
       <StyleSheetManager target={this.iframeHeadElem}>
         <Functions
-          title={props.entry.getIn(['data', 'title'])}
-          text={props.entry.getIn(['data', 'text'])}
-          large_text={props.entry.getIn(['data', 'large_text'])}
+          title={this.props.entry.getIn(['data', 'title'])}
+          text={this.props.entry.getIn(['data', 'text'])}
+          large_text={this.props.entry.getIn(['data', 'large_text'])}
         />
     </StyleSheetManager>
     )
