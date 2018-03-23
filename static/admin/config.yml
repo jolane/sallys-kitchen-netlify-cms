@@ -43,7 +43,7 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Large Text", name: "large_text", widget: "text"}
-          - {label: "Paragraph", name: "paragraph", widget: "text"}
+          - {label: "Text", name: "text", widget: "string"}
 
 
 

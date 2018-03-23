@@ -41,49 +41,49 @@ const Container = styled.div`
   font-family: ${fonts["main-font"]}
 `
 
-export const mainQuery4 = graphql`
-  query MainQuery4 {
-    about: markdownRemark(fileAbsolutePath: { glob: "/**/About.md" }) {
-      frontmatter {
-        title
-        paragraph
-        large_text
-        paragraph2
-      }
-    }
-    images: markdownRemark(fileAbsolutePath : {glob : "/**/Images.md"}) {
-      frontmatter {
-        image_one
-        image_two
-        image_three
-        image_four
-      }
-    }
-    theKitchen: markdownRemark(fileAbsolutePath: { glob: "/**/TheKitchen.md" }) {
-     frontmatter {
-       title
-       paragraph
-      }
-    }
-    whatsCooking: markdownRemark(fileAbsolutePath: { glob: "/**/WhatsCooking.md"}) {
-      frontmatter {
-        title
-        text
-      }
-    }
-    functions: markdownRemark(fileAbsolutePath: { glob: "/**/Functions.md"}) {
-      frontmatter {
-        title
-        text
-        large_text
-      }
-    }
-    where: markdownRemark(fileAbsolutePath: { glob: "/**/Where.md"}) {
-      frontmatter {
-        title
-        text
-        large_text
-      }
-    }
-  }
-`
+export const mainQuery5 = graphql`
+         query MainQuery5 {
+           about: markdownRemark(fileAbsolutePath: { glob: "/**/About.md" }) {
+             frontmatter {
+               title
+               paragraph
+               large_text
+               paragraph2
+             }
+           }
+           images: markdownRemark(fileAbsolutePath: { glob: "/**/Images.md" }) {
+             frontmatter {
+               image_one
+               image_two
+               image_three
+               image_four
+             }
+           }
+           theKitchen: markdownRemark(fileAbsolutePath: { glob: "/**/TheKitchen.md" }) {
+             frontmatter {
+               title
+               paragraph
+             }
+           }
+           whatsCooking: markdownRemark(fileAbsolutePath: { glob: "/**/WhatsCooking.md" }) {
+             frontmatter {
+               title
+               text
+             }
+           }
+           functions: markdownRemark(fileAbsolutePath: { glob: "/**/Functions.md" }) {
+             frontmatter {
+               title
+               text
+               large_text
+             }
+           }
+           where: markdownRemark(fileAbsolutePath: { glob: "/**/Where.md" }) {
+             frontmatter {
+               title
+               text
+               large_text
+             }
+           }
+         }
+       `
