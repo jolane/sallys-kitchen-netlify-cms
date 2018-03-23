@@ -13,7 +13,7 @@ const AboutPreview = ({ entry, widgetFor }) => {
         title={entry.getIn(['data', 'title'])}
         paragraph={entry.getIn(['data', 'paragraph'])}
         paragraph2={entry.getIn(['data', 'paragraph2'])}
-        callout={entry.getIn(['data', 'large_text'])}
+        large_text={entry.getIn(['data', 'large_text'])}
       />
     </StyleSheetManager>
   )
