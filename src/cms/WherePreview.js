@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheetManager } from 'styled-components'
 
-import WhatsCooking from '../sections/WhatsCooking'
+import Where from '../sections/Where'
 
 const WherePreview = ({ entry, widgetFor }) => {
   const iframe = document.querySelector('.nc-previewPane-frame')
