@@ -1,11 +1,11 @@
 export function box(width, height) {
-	return `
+  return `
 		position: relative;
 
 		&:before {
 			content: '';
 			display: block;
-			padding-bottom: ${(height / width) * 100}%;
+			padding-bottom: ${height / width * 100}%;
 		}
 
 		& > *:first-child {

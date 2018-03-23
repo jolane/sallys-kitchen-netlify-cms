@@ -2,13 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { fonts, colors } from '../styles/vars'
-import { below } from '../styles/media' 
+import { below } from '../styles/media'
 
 class MakeABooking extends React.Component {
   componentDidMount() {
     const script = document.createElement('script')
 
-    script.src = 'https://www.dimmi.com.au/embed/button-script?restaurantId=33472'
+    script.src =
+      'https://www.dimmi.com.au/embed/button-script?restaurantId=33472'
     script.async = true
 
     document.body.appendChild(script)
@@ -32,7 +33,6 @@ class MakeABooking extends React.Component {
 }
 
 export default MakeABooking
-
 
 const Wrapper = styled.a`
   position: absolute;

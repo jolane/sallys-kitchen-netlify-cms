@@ -23,12 +23,6 @@ collections:
           - {label: "Paragraph", name: "paragraph", widget: "text"}
           - {label: "Large Text", name: "large_text", widget: "text"}
           - {label: "Paragraph 2", name: "paragraph2", widget: "text"}
-      - file: "src/data/TheKitchen.md"
-        label: "The Kitchen"
-        name: "thekitchen"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Paragraph", name: "paragraph", widget: "text"}
       - file: "src/data/Images.md"
         label: "Images"
         name: "images"
@@ -37,13 +31,26 @@ collections:
           - {label: "Image Two", name: "image_two", widget: "image"}
           - {label: "Image Three", name: "image_three", widget: "image"}
           - {label: "Image Four", name: "image_four", widget: "image"}
+          - file: "src/data/TheKitchen.md"
+        label: "The Kitchen"
+        name: "thekitchen"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Paragraph", name: "paragraph", widget: "text"}
+      - file: "src/data/Functions.md"
+        label: "Functions"
+        name: "functions"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "text"}
+          - {label: "Large Text", name: "large_text", widget: "text"}
       - file: "src/data/Where.md"
         label: "Where"
         name: "where"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Large Text", name: "large_text", widget: "text"}
-          - {label: "Text", name: "text", widget: "string"}
+          - {label: "Text", name: "text", widget: "text"}
 
 
 

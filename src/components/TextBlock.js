@@ -3,13 +3,10 @@ import styled from 'styled-components'
 
 import { below } from '../styles/media'
 
-
-export default ({children}) => (
-	<section>
-		<Wrapper>
-			{children}
-		</Wrapper>
-	</section>
+export default ({ children }) => (
+  <section>
+    <Wrapper>{children}</Wrapper>
+  </section>
 )
 
 const Wrapper = styled.div`

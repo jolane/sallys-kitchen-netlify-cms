@@ -40,9 +40,7 @@ export default props => (
         >
           <div className="cell-inner">
             <h6 className="cell-heading">From Facebook</h6>
-            <p className="cell-text">
-              Stop by, feel welcome, eat well.
-            </p>
+            <p className="cell-text">Stop by, feel welcome, eat well.</p>
           </div>
 
           <a
@@ -98,11 +96,11 @@ const Wrapper = styled.section`
 	`};
 
   > div {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     ${below.m`
 			position: relative;
 		`};
@@ -112,7 +110,7 @@ const Wrapper = styled.section`
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    font-family: ${fonts["thin-heading"]};
+    font-family: ${fonts['thin-heading']};
     font-size: 1.5em;
     line-height: 1.12;
     padding: 0 14%;
@@ -179,7 +177,7 @@ const Wrapper = styled.section`
     left: 0;
     text-align: center;
     transition: all 0.3s linear;
-    font-family: ${fonts["bold-heading"]};
+    font-family: ${fonts['bold-heading']};
     font-size: 0.83em;
     color: inherit;
     text-decoration: none;
@@ -203,7 +201,7 @@ const Wrapper = styled.section`
     font-size: 1.5rem;
     text-transform: uppercase;
     margin: 0 0 1.4em 0;
-    font-family: ${fonts["main-font"]};
+    font-family: ${fonts['main-font']};
     font-weight: normal;
 
     ${below.m`

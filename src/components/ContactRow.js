@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import { below } from '../styles/media'
 import { fonts } from '../styles/vars'
 
-
 export default () => (
   <Wrapper>
     <a href="mailto:orders@sallyskitchen.com.au" className="item">
@@ -25,8 +24,6 @@ export default () => (
     </a>
   </Wrapper>
 )
-
-
 
 const Wrapper = styled.div`
   text-align: center;

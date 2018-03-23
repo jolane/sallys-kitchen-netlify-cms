@@ -1,7 +1,6 @@
 import React from 'react'
 import { StyleSheetManager } from 'styled-components'
 
-
 import About from '../sections/About'
 
 const AboutPreview = ({ entry, widgetFor }) => {

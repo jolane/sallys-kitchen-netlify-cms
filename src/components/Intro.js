@@ -158,7 +158,7 @@ const IsText = styled.span`
   ${props =>
     props.flip === true &&
     css`
-      -webkit- transform: rotateX(180deg);
+      -webkit-transform: rotateX(180deg);
       transform: rotateX(180deg);
     `};
 `

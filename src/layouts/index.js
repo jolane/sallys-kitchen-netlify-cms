@@ -35,7 +35,6 @@ TemplateWrapper.propTypes = {
 
 export default TemplateWrapper
 
-
 export const layoutQuery4 = graphql`
   query LayoutQuery4 {
     intro: markdownRemark(fileAbsolutePath: { glob: "/**/Intro.md" }) {
