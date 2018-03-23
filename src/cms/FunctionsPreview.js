@@ -4,7 +4,7 @@ import { StyleSheetManager } from 'styled-components'
 import Functions from '../sections/Functions'
 
 class FunctionsPreview extends React.Component {
-  componentDidMount() {
+  componentWillMount() {
     const iframe = document.querySelector('.nc-previewPane-frame')
     this.iframeHeadElem = iframe.contentDocument.head
   }
