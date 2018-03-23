@@ -9,14 +9,7 @@ export default ({ title, text, large_text }) => (
     <div>
       <p>{text}</p>
     </div>
-    <h5>
-      {large_text.split('\n').map((line, index) => (
-        <div key={index}>
-          <span>{line}</span>
-          <br />
-        </div>
-      ))}
-    </h5>
+    <h5><span>{large_text}</span></h5>
     <ContactRow />
   </TextBlock>
 )

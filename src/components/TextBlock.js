@@ -71,6 +71,7 @@ const Wrapper = styled.div`
 
     & span {
       border-bottom: 1px dashed #1a1a1a;
+      white-space: pre-line;
     }
 
     ${below.m`

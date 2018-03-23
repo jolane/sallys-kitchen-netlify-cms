@@ -10,12 +10,7 @@ export default ({ title, paragraph, large_text, paragraph2 }) => (
       <p>{paragraph}</p>
     </div>
     <h5>
-      {large_text.split('\n').map((line, index) => (
-        <div key={index}>
-          <span>{line}</span>
-          <br />
-        </div>
-      ))}
+      <span>{large_text}</span>
     </h5>
     <div>
       <p>{paragraph2}</p>
