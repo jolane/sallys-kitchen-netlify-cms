@@ -4,13 +4,10 @@ import { StyleSheetManager } from 'styled-components'
 import Functions from '../sections/Functions'
 
 class FunctionsPreview extends React.Component {
-  getTarget() {
-    const iframe = document.querySelector('.nc-previewPane-frame')
-    return iframe.contentDocument.head
-  }
   render() {
     return (
-      <StyleSheetManager target={this.getTarget()}>
+      <StyleSheetManager target={this.styleTarget}>
+        <div ref={(el) => { this.styleTarget = el }} />
         <Functions
           title={this.props.entry.getIn(['data', 'title'])}
           text={this.props.entry.getIn(['data', 'text'])}
