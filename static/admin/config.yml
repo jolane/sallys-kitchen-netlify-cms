@@ -51,6 +51,10 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Large Text", name: "large_text", widget: "text"}
           - {label: "Text", name: "text", widget: "text"}
+      - file: "src/data/Hours.md"
+        label: "Hours"
+        name: "hours"
+
 
 
 
