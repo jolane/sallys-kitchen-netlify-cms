@@ -35,8 +35,9 @@ collections:
           - {label: "What's Cooking Title", name: "cooking_title", widget: "string"}
           - {label: "What's Cooking Text", name: "cooking_text", widget: "text"}
 
-          - {label: "What's Cooking Title", name: "cooking_title", widget: "string"}
-          - {label: "What's Cooking Text", name: "cooking_text", widget: "text"}
+          - {label: "Functions Title", name: "functions_title", widget: "string"}
+          - {label: "Functions Text", name: "functions_text", widget: "text"}
+          - {label: "Functions Large Text", name: "functions_large_text", widget: "text"}
 
           - {label: "Where Title", name: "where_title", widget: "string"}
           - {label: "Where Large Text", name: "where_large_text", widget: "text"}

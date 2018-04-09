@@ -5,6 +5,7 @@ import About from '../sections/About'
 import Images from '../sections/Images'
 import TheKitchen from '../sections/TheKitchen'
 import WhatsCooking from '../sections/WhatsCooking'
+import Functions from '../sections/Functions'
 import Where from '../sections/Where'
 import Hours from '../sections/Hours'
 
@@ -39,9 +40,10 @@ const ContentPreview = ({ entry, widgetFor }) => {
           cooking_text={entry.getIn(['data', 'cooking_text'])}
         />
 
-        <WhatsCooking
-          cooking_title={entry.getIn(['data', 'cooking_title'])}
-          cooking_text={entry.getIn(['data', 'cooking_text'])}
+        <Functions
+          functions_title={entry.getIn(['data', 'functions_title'])}
+          functions_text={entry.getIn(['data', 'functions_text'])}
+          functions_large_text={entry.getIn(['data', 'functions_large_text'])}
         />
 
         <Where
