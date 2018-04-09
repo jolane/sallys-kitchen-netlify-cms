@@ -5,12 +5,12 @@ import ContactRow from '../components/ContactRow'
 
 export default props => (
   <TextBlock>
-    <h4>{props.title}</h4>
+    <h4>{props.where_title}</h4>
     <h5>
-      <span>{props.large_text}</span>
+      <span>{props.where_large_text}</span>
     </h5>
     <div>
-      <p>{props.text}</p>
+      <p>{props.where_text}</p>
     </div>
     <ContactRow />
   </TextBlock>

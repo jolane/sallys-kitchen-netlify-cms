@@ -3,11 +3,11 @@ import React from 'react'
 import TextBlock from '../components/TextBlock'
 import ContactRow from '../components/ContactRow'
 
-export default ({ title, text }) => (
+export default ({ cooking_title, cooking_text }) => (
   <TextBlock>
-    <h4>{title}</h4>
+    <h4>{cooking_title}</h4>
     <div>
-      <p>{text}</p>
+      <p>{cooking_text}</p>
     </div>
   </TextBlock>
 )

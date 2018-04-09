@@ -2,17 +2,22 @@ import React from 'react'
 
 import TextBlock from '../components/TextBlock'
 
-export default ({ title, paragraph, large_text, paragraph2 }) => (
+export default ({
+  about_title,
+  about_paragraph,
+  about_large_text,
+  about_paragraph2,
+}) => (
   <TextBlock>
-    <h4>{title}</h4>
+    <h4>{about_title}</h4>
     <div>
-      <p>{paragraph}</p>
+      <p>{about_paragraph}</p>
     </div>
     <h5>
-      <span>{large_text}</span>
+      <span>{about_large_text}</span>
     </h5>
     <div>
-      <p>{paragraph2}</p>
+      <p>{about_paragraph2}</p>
       <br />
       <br />
     </div>

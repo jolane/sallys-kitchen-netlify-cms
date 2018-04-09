@@ -2,11 +2,11 @@ import React from 'react'
 
 import TextBlock from '../components/TextBlock'
 
-export default ({ title, paragraph }) => (
+export default ({ kitchen_title, kitchen_text }) => (
   <TextBlock>
-    <h4>{title}</h4>
+    <h4>{kitchen_title}</h4>
     <div>
-      <p>{paragraph}</p>
+      <p>{kitchen_text}</p>
     </div>
   </TextBlock>
 )

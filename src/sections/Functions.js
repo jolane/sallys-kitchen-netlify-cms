@@ -3,14 +3,14 @@ import React from 'react'
 import TextBlock from '../components/TextBlock'
 import ContactRow from '../components/ContactRow'
 
-export default ({ title, text, large_text }) => (
+export default ({ functions_title, functions_text, functions_large_text }) => (
   <TextBlock>
-    <h4>{title}</h4>
+    <h4>{functions_title}</h4>
     <div>
-      <p>{text}</p>
+      <p>{functions_text}</p>
     </div>
     <h5>
-      <span>{large_text}</span>
+      <span>{functions_large_text}</span>
     </h5>
     <ContactRow />
   </TextBlock>
