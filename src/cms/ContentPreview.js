@@ -7,7 +7,7 @@ import TheKitchen from '../sections/TheKitchen'
 import WhatsCooking from '../sections/WhatsCooking'
 import Where from '../sections/Where'
 
-const AboutPreview = ({ entry, widgetFor }) => {
+const ContentPreview = ({ entry, widgetFor }) => {
   const iframe = document.querySelector('.nc-previewPane-frame')
   const iframeHeadElem = iframe.contentDocument.head
 
@@ -35,7 +35,7 @@ const AboutPreview = ({ entry, widgetFor }) => {
           kitchen_text={entry.getIn(['data', 'kitchen_text'])}
         />
       </StyleSheetManager>
-       <StyleSheetManager target={iframeHeadElem}>
+      <StyleSheetManager target={iframeHeadElem}>
         <WhatsCooking
           cooking_title={entry.getIn(['data', 'cooking_title'])}
           cooking_text={entry.getIn(['data', 'cooking_text'])}
@@ -58,4 +58,4 @@ const AboutPreview = ({ entry, widgetFor }) => {
   )
 }
 
-export default AboutPreview
+export default ContentPreview
