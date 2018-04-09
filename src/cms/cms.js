@@ -5,4 +5,4 @@ import ContentPreview from './ContentPreview'
 
 CMS.registerPreviewStyle('/styles/global.css')
 CMS.registerPreviewTemplate('intro', HeaderPreview)
-CMS.registerPreviewTemplate('content ', ContentPreview)
+CMS.registerPreviewTemplate('content', ContentPreview)
