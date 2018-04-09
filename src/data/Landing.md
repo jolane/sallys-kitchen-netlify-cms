@@ -24,4 +24,6 @@ where_text: >-
 
 
   If you’d like to make a booking or talk about putting together a fabulous function, please call Sally and her team.
+hours_title: OPENING HOURS
+hours_text: lorem
 ---

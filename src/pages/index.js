@@ -13,6 +13,7 @@ import TheKitchen from '../sections/TheKitchen'
 import WhatsCooking from '../sections/WhatsCooking'
 import Functions from '../sections/Functions'
 import Where from '../sections/Where'
+import Hours from '../sections/Hours'
 import Map from '../sections/Map'
 
 const IndexPage = ({ data }) => {
@@ -26,6 +27,7 @@ const IndexPage = ({ data }) => {
       <Functions {...content} />
       <Latest />
       <Where {...content} />
+      <Hours {...content} />
       <Map />
     </Container>
   )
@@ -37,8 +39,8 @@ const Container = styled.div`
   font-family: ${fonts['main-font']};
 `
 
-export const mainQuery6 = graphql`
-  query MainQuery6 {
+export const mainQuery22 = graphql`
+  query MainQuery22 {
     markdownRemark(fileAbsolutePath: { glob: "/**/Landing.md" }) {
       frontmatter {
         about_title
@@ -59,6 +61,8 @@ export const mainQuery6 = graphql`
         where_title
         where_large_text
         where_text
+        hours_title
+        hours_text
       }
     }
   }

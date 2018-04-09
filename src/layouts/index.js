@@ -24,7 +24,7 @@ const TemplateWrapper = ({ children, data }) => (
         },
       ]}
     />
-    <Header words={data.intro.frontmatter.is_words} />
+    <Header words={data.intro1.frontmatter.is_words} />
     <main>{children()}</main>
   </div>
 )
@@ -35,9 +35,9 @@ TemplateWrapper.propTypes = {
 
 export default TemplateWrapper
 
-export const layoutQuery4 = graphql`
-  query LayoutQuery4 {
-    intro: markdownRemark(fileAbsolutePath: { glob: "/**/Intro.md" }) {
+export const layoutQuery10 = graphql`
+  query LayoutQuery10 {
+    intro1: markdownRemark(fileAbsolutePath: { glob: "/**/Intro.md" }) {
       frontmatter {
         is_words
       }

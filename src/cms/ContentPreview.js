@@ -6,6 +6,7 @@ import Images from '../sections/Images'
 import TheKitchen from '../sections/TheKitchen'
 import WhatsCooking from '../sections/WhatsCooking'
 import Where from '../sections/Where'
+import Hours from '../sections/Hours'
 
 const ContentPreview = ({ entry, widgetFor }) => {
   const iframe = document.querySelector('.nc-previewPane-frame')
@@ -51,7 +52,13 @@ const ContentPreview = ({ entry, widgetFor }) => {
         <Where
           where_title={entry.getIn(['data', 'where_title'])}
           where_large_text={entry.getIn(['data', 'where_large_text'])}
-          where_paragraph={entry.getIn(['data', 'where_paragraph'])}
+          where_text={entry.getIn(['data', 'where_text'])}
+        />
+      </StyleSheetManager>
+      <StyleSheetManager target={iframeHeadElem}>
+        <Hours
+          hours_title={entry.getIn(['data', 'hours_title'])}
+          hours_text={entry.getIn(['data', 'hours_text'])}
         />
       </StyleSheetManager>
     </div>

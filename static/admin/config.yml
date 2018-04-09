@@ -41,3 +41,6 @@ collections:
           - {label: "Where Title", name: "where_title", widget: "string"}
           - {label: "Where Large Text", name: "where_large_text", widget: "text"}
           - {label: "Where Paragraph", name: "where_paragraph", widget: "text"}
+
+          - {label: "Hours Heading", name: "hours_title", widget: "string"}
+          - {label: "Hours Text", name: "hours_text", widget: "text"}
