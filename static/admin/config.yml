@@ -32,10 +32,10 @@ collections:
           - {label: "The Kitchen Title", name: "kitchen_title", widget: "string"}
           - {label: "The Kitchen Text", name: "kitchen_text", widget: "text"}
 
-          - {label: "Breakfast Menu", name: "breakfast_menu", widget: "file"}
-
           - {label: "What's Cooking Title", name: "cooking_title", widget: "string"}
           - {label: "What's Cooking Text", name: "cooking_text", widget: "text"}
+
+          - {label: "Breakfast Menu", name: "breakfast_menu", widget: "file"}
 
           - {label: "Functions Title", name: "functions_title", widget: "string"}
           - {label: "Functions Text", name: "functions_text", widget: "text"}
