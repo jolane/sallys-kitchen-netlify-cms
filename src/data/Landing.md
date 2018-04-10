@@ -9,6 +9,7 @@ image_three: /images/full3.jpg
 image_four: /images/full4.jpg
 kitchen_title: THE KITCHEN
 kitchen_text: You’ll find Sally in the kitchen or chatting to guests most days. Take the time to sit and sample what’s cooking. It’s that type of local – where the people love cooking and know just how you like your coffee.
+breakfast_menu: /images/BREAKFAST.pdf
 cooking_title: WHAT’S COOKING
 cooking_text: Always fresh and local, here’s a selection of a few things we are dishing out at the moment. Come in and check out the full menu.
 functions_title: FUNCTIONS

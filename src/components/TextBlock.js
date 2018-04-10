@@ -27,6 +27,10 @@ const Wrapper = styled.div`
     > p {
       margin: 0 0 2.5em 0;
       white-space: pre-line;
+
+      a {
+        color: inherit;
+      }
     }
   }
 

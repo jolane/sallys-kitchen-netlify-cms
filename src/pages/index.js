@@ -53,6 +53,7 @@ export const mainQuery22 = graphql`
         image_four
         kitchen_title
         kitchen_text
+        breakfast_menu
         cooking_title
         cooking_text
         functions_title
